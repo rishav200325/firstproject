@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+   <title>why to donate Blood</title>
+   <link rel="stylesheet" href="login.css">
+  </head>
+    <head>
+        <title>
+            FORM
+        </title>
+        <style>
+            body{
+                background-image: url(bd2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+            }
+            .h1{
+                background-color: #0b0c0c;
+                color: rgb(242, 239, 232);
+                text-align: center;
+            }
+            input[type=text],input[type=date],input[type=file], select, textarea{
+            width: 80%;
+            padding: 12px;
+            border: 1px solid rgb(243, 236, 236);
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+}
+label {
+    color: rgb(240, 244, 247);
+    font-size: 25px;
+  padding: 12px 12px 12px 0px;
+  display: inline-block;
+}
+input[type=submit],input[type=reset] {
+  background-color: #ce1c1c;
+  color: rgb(251, 246, 246);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  
+}
+
+
+.container {
+    background-color: rgb(6, 5, 5);
+  background-color: rgba(0,0,0, 0.4);
+
+  border-radius: 5px;
+  
+  padding: 20px;
+  padding-bottom: 300px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+        </style>
+    </head>
+    <body>
+        <h1 class="h1"></h1>
+        <div class="container">
+            <form action="action_page.php">
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+              </div>
+            
+              <div class="row">
+                <div class="col-25">
+                  <label for="lname">Gender:</label>
+                </div>
+                <div class="col-75">
+                  <input type="checkbox" id="gender" name="gender" value="Male">
+                  <label for="gender" style="padding-left: 20px;">Male</label><br>
+                  <input type="checkbox" id="gender" name="gender" value="Female">
+                  <label for="gender" style="padding: 20px;">Female</label>
+                  <input type="checkbox" id="gender" name="gender" value="Others">
+                  <label for="gender" style="padding: 20px;">Others</label>
+                </div>
+             
+                <div class="row"></div>
+                <div class="col-25">
+                  <label for="state">State</label>
+                </div>
+                <div class="col-75">
+                  <select id="country" name="country">
+                    <option value="--select--">--select--</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="West Bengal">West Bengal</option>
+                  </select>
+                </div>
+                <div class="row"></div>
+                <div class="col-25">
+                  <label for="Blood-Group">Blood-Group</label>
+                </div>
+                <div class="col-75">
+                  <select id="Blood-Group" name="Blood-Group">
+                    <option value="--select--">--select--</option>
+                    <option value="O(POSITIVE+)">O(POSITIVE+)</option>
+                    <option value="O(NEGATIVE-)">O(NEGATIVE-)</option>
+                    <option value="A(POSITIVE+)">A(POSITIVE+)</option>
+                    <option value="A(NEGATIVE-)">A(NEGATIVE-)</option>
+                    <option value="B(POSITIVE+)">B(POSITIVE+)</option>
+                    <option value="B(NEGATIVE-)">B(NEGATIVE-)</option>
+                    <option value="AB(POSITIVE+)">AB(POSITIVE+)</option>
+                    <option value="AB(NEGATIVE-)">AB(NEGATIVE-)</option>
+                    
+                  </select>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="img">Aadhaar-Card image (Front):</label>
+                </div>
+                <div class="col-75">
+                  <input type="file" id="img" name="img" accept="image/*">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="img">Aadhaar-Card image (Back):</label>
+                </div>
+                <div class="col-75">
+                  <input type="file" id="img" name="video" accept="image/*">
+                </div>
+              </div>
+
+
+
+
+
+              <div class="row">
+                <input type="submit" value="Submit">
+                <input type="reset" style="margin-right: 1300px;">
+              </div>
+            </form>
+          </div>
+
+    </body>
+    <body>
+      <div class="about-section" style="background-image: linear-gradient(rgba(11, 10, 10, 0.518),rgba(12, 12, 12, 0.442))">
+        <ul>
+          <p style="padding-left: 500px;">E-mail ID: rishav200325raj@gmail.com , manitraina2003@gmail.com</p>
+          <p style="padding-left: 600px;">Contact No.: 80xxxxxxx , 90xxxxxxx</p>
+          <p style="padding-left: 550px;">Address:Lovely Professional University, Sub. Dist.-Phagwara, Jalandhar, PUNJAB</p>
+       
+        <p style="padding-left: 700px;"><a href="index.html" target="_self" style="color: white;">Home</a></p>
+    
+       
+        <p style="padding-left: 650px;"> know more about us on</p>
+        <div class="logo">
+          <img src="insta.png" alt="logo" width="100px" href="https://instagram.com">
+          <img src="facebook.png" alt="logo" width="100px">
+          <img src="twitter.png" alt="logo" width="100px">
+          <img src="youtube.png" alt="logo" width="100px">
+          
+        </div>
+    
+</html>

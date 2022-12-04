@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEW LIFE</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+
+    <div class="full-page">
+        <div class="navbar">
+           <div class="logo" style="margin-left: -100px;">
+            <ul>
+                <li><a style="font-size: 25px;"><b style="padding-left: -50px;"> NEW LIFE</b></a></li>
+            </ul>
+            <img src="blood-donation.png" alt="logo" width="100px"></div>
+            <ul>
+                <p><a href="login.html" target="_self">Registration BOX</Form></a></p>
+                <p><a href="WDB.html">Why to donate blood</a></p>
+                <p><a href="#">Who can give blood</a></p>
+                <p><a href="ABOUTUS.HTML">About us</a></p>
+                <p><a href="ourteam.html">Contact</a></p>
+            </ul>
+
+
+
+
+
+        </div>
+        <div class="form-box">
+         <div class="botton-box">
+            <div id="btn"></div>
+            
+            <button type="button" class="button1" onclick="login()">log In</button>
+            <button type="button" class="button1" onclick="register()">Register</button>
+            
+         </div>
+         <form id="login"class="input-group">
+          <input type="text" class="input-field" placeholder="user Id" required>
+          <input type="password" class="input-field" placeholder="Enter Password" required>
+          <input type="checkbox" class="chech-box"><span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log in</button>
+         </form>
+         <form id="register"class="input-group">
+            <input type="text" class="input-field" placeholder="user Id" required>
+            <input type="email" class="input-field" placeholder="Email Id" required>
+            <input type="text" class="input-field" placeholder="Enter Password" required>
+            <input type="checkbox" class="chech-box"><span>I agree to the t&c</span>
+            <button type="submit" class="submit-btn">Register</button>
+           </form>
+         </div>
+         
+      </div>
+     <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+     function register(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+
+     }
+     function login(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+        
+     }
+     
+
+     </script>
+    
+  </body>
+  <body>
+    
+ </html>
